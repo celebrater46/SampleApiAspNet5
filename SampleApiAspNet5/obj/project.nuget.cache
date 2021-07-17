@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "RnIGJoM4ZEfCf6frCsP6kPsX0ymwcGfJDdbvuDVpBTv5v1JXR0ybuCvpYu/Hlo+HlgM4c0FDj/IltAzVS/64+A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Enin\\RiderProjects\\SampleApiAspNet5\\SampleApiAspNet5\\SampleApiAspNet5.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Enin\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.13\\microsoft.visualstudio.azure.containers.tools.targets.1.10.13.nupkg.sha512"
+  ],
+  "logs": []
+}
