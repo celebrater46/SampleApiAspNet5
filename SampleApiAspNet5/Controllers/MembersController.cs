@@ -3,11 +3,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using System.Web.Http;
+using System.Threading.Tasks;
+// using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 
 namespace SampleApiAspNet5.Controllers
 {
-    public class MembersController : ApiController
+    public class MembersController : ControllerBase
     {
         Member[] members = new Member[]
         {
@@ -21,14 +23,18 @@ namespace SampleApiAspNet5.Controllers
             return members;
         }
 
-        public IHttpActionResult GetProduct(int id)
+        // public IHttpActionResult GetProduct(int id)
+        [HttpPost]
+        // public ActionResult<Member>(int id)
+        public async Task<ActionResult<Member>>PostMember(Member member)
         {
-            var member = members.FirstOrDefault((p) => p.Id == id);
+            // var member = members.FirstOrDefault((p) => p.Id == id);
             if (member == null)
             {
                 return NotFound();
             }
             return Ok(member);
+            // return Ok(member);
         }
     }
 }
