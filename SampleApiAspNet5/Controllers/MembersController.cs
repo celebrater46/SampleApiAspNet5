@@ -36,5 +36,11 @@ namespace SampleApiAspNet5.Controllers
             return Ok(member);
             // return Ok(member);
         }
+        // {
+        //     _context.Employees.Add(employee);
+        //     await _context.SaveChangesAsync();
+        //
+        //     return CreatedAtAction("GetEmployee", new { id = employee.Id }, employee);
+        // }
     }
 }
